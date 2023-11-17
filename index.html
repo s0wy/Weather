@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./img/free-icon-sun-4814268.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Philosopher:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<!-- First site ksta -->
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="container__links">
+                <img src="" alt="" class="container__links_img">
+                <a href="https://taplink.cc/s0wy" class="container__links_link">Автор</a>
+            </div>
+              <div class="container__links">
+                  <img src="" alt="" class="container__links_img">
+                  <a href="https://github.com/s0wy" class="container__links_link">Другие проекты</a>
+              </div>
+        </div>
+    </header>
+    <div class="weather">
+        <section class="weather__preview">
+            <section class="preview">
+                <p class="preview__title">Погода онлайн</p>
+                <p class="preview__text">Сервис для просмотра погоды в вашем городе</p>
+            </section>
+            <section class="information">
+                <div class="information__block ">
+                    <h5 class="block_name">Скорость ветра</h5>
+                    <h2 class="block_content wind">0.0</h2>
+                    <img src="./img/free-icon-wind-2011448.png" alt="image" class="block_image">
+                </div>
+                <div class="information__block ">
+                    <h5 class="block_name">Влажность</h5>
+                    <h2 class="block_content humidity">0.0</h2>
+                    <img src="./img/free-icon-humidity-481453.png" alt="image" class="block_image">
+                </div>
+                <div class="information__block ">
+                    <h5 class="block_name">Ощущается как</h5>
+                    <h2 class="block_content feelsLike">0.0</h2>
+                    <img src="./img/free-icon-temperature-3923489.png" alt="image" class="block_image">
+                </div>
+                <div class="information__block ">
+                    <h5 class="block_name">Минимальная температура</h5>
+                    <h2 class="block_content minTemp">0.0</h2>
+                    <img src="./img/free-icon-temperature-3923489.png" alt="image" class="block_image">
+                </div>
+                <div class="information__block ">
+                    <h5 class="block_name">Максимальная температура</h5>
+                    <h2 class="block_content maxTemp">0.0</h2>
+                    <img src="./img/free-icon-temperature-3923489.png" alt="image" class="block_image">
+                </div>
+                <div class="information__block ">
+                    <h5 class="block_name">Давление</h5>
+                    <h2 class="block_content pressure">0.0</h2>
+                    <img src="./img/free-icon-barometer-3093409.png" alt="image" class="block_image">
+                </div>
+
+            </section>
+        </section>
+        <section class="weather__search">
+            <input class="weather__city" type="text" placeholder="Введите название города" id = "weather__city" value="Минск">
+            <img src="./img/free-icon-weather-app-3767039.png" alt="weatherIMG">
+            <p class="weather__temperatureContent">0.00</p>
+            <div class="weather__content">
+                <span class="weather__name">Минск</span>
+                <span class="weather__date">Вторник, Июнь</span>
+            </div>
+            <button class="weather__searchButton" id = "weather__searchButton">Узнать погоду</button>
+        </section>
+    </div>
+    <div class="footer">
+        <p class="info">Весь контент защищён авторскими правами.</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
