@@ -358,13 +358,46 @@ body {
   .weather__search {
     order: 0;
     width: 100%;
-    margin: 0px 0px 50px 30px;
+    margin: 0px 0px 90px 90px;
   }
   .weather__search img {
     max-width: 100px;
     max-height: 100px;
     width: 100%;
     align-self: center;
+  }
+  .preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: #fff;
+    max-width: 900px;
+    width: 100vh;
+    height: 300px;
+  }
+  .preview::before {
+    content: "";
+    position: absolute;
+    max-width: 900px;
+    width: 100%;
+    height: 100%;
+    background: url(../img/0427230344011dp.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    border-radius: 10px;
+    filter: blur(4px) brightness(0.7);
+  }
+  .information {
+    justify-content: center;
+  }
+  .information__block {
+    margin: 0px 0px 20px 20px;
   }
 }
 @media (max-width: 1200px) {
